@@ -1,17 +1,37 @@
 
-public class day41 {
+package EvaluasiMentor2;
+
+import java.util.Scanner;
+
+public class no6 {
     public static void main(String[] args) {
-        int a = 12;
-        int b = 15;
-        int c = 20;
-        int d = 10;
+        Scanner sc = new Scanner (System.in);
+        double harga = sc.nextDouble();
+        double diskon = sc.nextDouble();
+        harga -= diskon*harga/100;
+        System.out.println(harga);
         
-        System.out.println(a == b);
-        System.out.println(a += c);
-        System.out.println(b -= a);
-        System.out.println(b *= c);
-        System.out.println(c /= a);
-        System.out.println(c %= b);
     }
     
+}
+
+package EvaluasiMentor2;
+
+import java.util.Scanner;
+
+public class no7 {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner (System.in);
+      int a = sc.nextInt();
+      int b = sc.nextInt();
+      boolean sama = a == b; 
+      boolean tua = a > b;
+      boolean muda = a < b;
+        System.out.println(sama);
+        System.out.println(tua);
+        System.out.println(muda);
+    }
+  
+     
+
 }
